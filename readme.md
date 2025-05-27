@@ -265,13 +265,6 @@ size_t:      1111111111111111111111111111111110000000000000000000000000000000
              (18,446,744,071,562,067,968 as unsigned)
 ```
 
-### Why Immediate Crash vs Gradual Degradation
-
-Unlike typical integer overflow bugs that might cause subtle issues, this creates values that are:
-- **8.5 billion times larger** than the original
-- **Physically impossible** to allocate
-- **Eventually creates out of bounds reads**
-
 ## 🔍 **Detailed Investigation Process**
 
 ### Discovery Timeline
